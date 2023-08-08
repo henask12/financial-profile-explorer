@@ -1,15 +1,23 @@
+import PropTypes from 'prop-types';
 import React from 'react';
-import { useParams } from 'react-router-dom';
 
-const CategoryDetails = () => {
-  const { id } = useParams();
+const CompanyDetails = ({ company }) => (
+  <div className="company-details">
+    <h2>{company.companyName}</h2>
+    <p>
+      Price:
+      {company.price}
+    </p>
+    {/* Render other details as needed */}
+  </div>
+);
 
-  return (
-    <div className="bg-gray-100 p-4">
-      <h1 className="text-2xl font-bold mb-4">Category Details</h1>
-      {/* Display category details */}
-    </div>
-  );
+CompanyDetails.propTypes = {
+  company: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    companyName: PropTypes.string.isRequired,
+    symbol: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+  }).isRequired,
 };
-
-export default CategoryDetails;
+export default CompanyDetails;
