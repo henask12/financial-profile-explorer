@@ -70,11 +70,11 @@ const CompaniesList = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </header>
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-center mt-6" data-testid="company-details">
         {selectedCompany ? (
           <CompanyDetails company={selectedCompany} />
         ) : (
-          <div className="grid gap-4 grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8">
+          <div className="grid gap-4 grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8" data-testid="company-card">
             {filteredCompanies.map((company, index) => (
               <CompanyCard
                 company={company}
