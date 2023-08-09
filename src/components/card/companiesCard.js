@@ -1,13 +1,18 @@
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 
-const CompanyCard = ({ company, index, onClick }) => {
+const CompanyCard = ({ company, index }) => {
   const cardBgColor = index % 4 === 0 || index % 4 === 3 ? 'bg-pink-500' : 'bg-pink-600';
+  const navigate = useNavigate();
 
+  const handleCardClick = () => {
+    navigate(`/company/${company.symbol}`, { state: { company } });
+  };
   return (
     <button
       className={`border-0 ${cardBgColor} text-white rounded-lg overflow-hidden shadow-lg`}
-      onClick={() => onClick(company)}
+      onClick={handleCardClick}
       type="button"
     >
       <div className="text-end p-2">
@@ -34,7 +39,7 @@ CompanyCard.propTypes = {
     price: PropTypes.number.isRequired,
   }).isRequired,
   index: PropTypes.number.isRequired,
-  onClick: PropTypes.func.isRequired, // Add onClick to PropTypes validation
+  // onClick: PropTypes.func.isRequired, // Add onClick to PropTypes validation
 };
 
 export default CompanyCard;
