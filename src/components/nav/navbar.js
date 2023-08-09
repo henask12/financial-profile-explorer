@@ -1,13 +1,12 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Use useNavigate instead of useHistory
 import { FaAngleLeft, FaMicrophone, FaCog } from 'react-icons/fa';
-import CompaniesList from './FinancialList';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const navigate = useNavigate();
 
   const handleBackClick = () => {
-    navigate(<CompaniesList />); // Navigate back when the button is clicked
+    navigate(-1); // Navigate back
   };
 
   return (

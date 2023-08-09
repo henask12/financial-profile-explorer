@@ -36,6 +36,7 @@ const categoriesSlice = createSlice({
       state.error = false;
       state.success = false;
       state.performingAction = false;
+      state.companies = [];
     },
   },
   extraReducers: (builder) => {

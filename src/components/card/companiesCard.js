@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { FaArrowRight } from 'react-icons/fa';
-// import { Link } from 'react-router-dom';
 
 const CompanyCard = ({ company, index, onClick }) => {
   const cardBgColor = index % 4 === 0 || index % 4 === 3 ? 'bg-pink-500' : 'bg-pink-600';

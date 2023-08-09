@@ -1,7 +1,10 @@
-import { BrowserRouter } from 'react-router-dom';
+import React from 'react';
+import {
+  BrowserRouter,
+} from 'react-router-dom';
 import './App.css';
-import CompaniesList from './components/FinancialList';
-import Header from './components/navbar';
+import Header from './components/nav/navbar';
+import CompaniesList from './components/list/FinancialList';
 
 function App() {
   return (

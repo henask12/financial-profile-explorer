@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import CompanyCard from './companiesCard';
-import { fetchCategories } from '../redux/catagory/catagoriesSlice';
-import CompanyDetails from './FinancialDetails';
+import CompanyCard from '../card/companiesCard';
+import { fetchCategories } from '../../redux/catagory/catagoriesSlice';
+import CompanyDetails from '../details/FinancialDetails';
 
 const CompaniesList = () => {
   const { loading, error, companies } = useSelector((state) => state.categories);
@@ -16,6 +16,10 @@ const CompaniesList = () => {
 
   useEffect(() => {
     dispatch(fetchCategories());
+
+    return () => {
+      setSelectedCompany(null);
+    };
   }, [dispatch]);
 
   if (loading) {
