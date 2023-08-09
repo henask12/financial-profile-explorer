@@ -20,7 +20,7 @@ const CompaniesList = () => {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-screen">
+      <div className="flex items-center justify-center h-screen bg-pink-700">
         <div className="text-center">
           <div className="animate-spin mb-2">
             <svg className="w-8 h-8 text-gray-800" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
