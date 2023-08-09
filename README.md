@@ -87,7 +87,7 @@ A **Financial Profile Explorer**  is a comprehensive online platform designed to
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
- <!-- [Live Demo](https://space-traveler-hub-qacv.onrender.com/) -->
+ [Live Demo](https://financial-profile-explorer.onrender.com/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
