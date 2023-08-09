@@ -1,14 +1,18 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 
-const CompanyDetails = ({ company }) => {
+const CompanyDetails = () => {
+  const location = useLocation();
+  const { company } = location.state;
+
   console.log(company);
   return (
     <div className="company-details">
-      <h2>{company.companyName}</h2>
+      <h2>{company?.companyName}</h2>
       <p>
         Price:
-        {company.price}
+        {company?.price}
       </p>
       {/* Render other details as needed */}
     </div>
