@@ -17,7 +17,7 @@ const CompanyDetails = () => {
         />
         <div className="w-100 text-center ml-6 text-xl">
           <h1 className="font-bold text-3xl">{company.symbol}</h1>
-          <span>{company.price}</span>
+          <h6>{company.price}</h6>
         </div>
       </div>
       <h5 className="mt-2 pb-1 text-center font-semibold text-3xl">
