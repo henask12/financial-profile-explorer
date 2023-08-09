@@ -42,9 +42,9 @@ const CompanyDetails = () => {
                 key={value}
                 className={`border-t py-3 flex justify-between items-center ${index % 2 === 0 ? 'bg-rose-500' : 'bg-pink-700'}`}
               >
-                <span>{value}</span>
+                <span className="p-3 text-lg font-semibold capitalize">{value}</span>
                 <div className="flex items-center">
-                  <span className="p-3">{company[value]}</span>
+                  <span className="p-3 text-lg text-semibold">{company[value]}</span>
                   <FaArrowRight
                     className="FaArrowRight"
                     size={22}
