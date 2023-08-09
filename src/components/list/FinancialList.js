@@ -9,6 +9,7 @@ const CompaniesList = () => {
   const dispatch = useDispatch();
 
   const [selectedCompany, setSelectedCompany] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
 
   const handleCardClick = (company) => {
     setSelectedCompany(company);
@@ -53,22 +54,38 @@ const CompaniesList = () => {
     );
   }
 
+  const filteredCompanies = companies
+    .filter((company) => company.companyName.toLowerCase()
+      .includes(searchTerm.toLowerCase()));
+
   return (
-    <div>
-      {selectedCompany ? (
-        <CompanyDetails company={selectedCompany} />
-      ) : (
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {companies.map((company, index) => (
-            <CompanyCard
-              company={company}
-              index={index}
-              key={company.symbol}
-              onClick={() => handleCardClick(company)}
-            />
-          ))}
-        </div>
-      )}
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 className="text-center text-2xl mt-4 mb-6">Stats by Company</h2>
+      <header className="p-4 bg-pink-900">
+        <input
+          type="text"
+          placeholder="Search companies..."
+          className="px-4 py-2 border border-pink-600 rounded w-full bg-pink-500 text-pink-900"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </header>
+      <div className="flex justify-center mt-6">
+        {selectedCompany ? (
+          <CompanyDetails company={selectedCompany} />
+        ) : (
+          <div className="grid gap-4 grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8">
+            {filteredCompanies.map((company, index) => (
+              <CompanyCard
+                company={company}
+                index={index}
+                key={company.symbol}
+                onClick={() => handleCardClick(company)}
+              />
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
