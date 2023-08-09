@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { useNavigate } from 'react-router-dom';
-import HeaderWithBackButton from '../nav/navbar';
+import HeaderWithBackButton from '../nav/navbar.js';
 
 // Mock the useNavigate hook
 jest.mock('react-router-dom', () => ({

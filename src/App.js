@@ -3,9 +3,9 @@ import {
   BrowserRouter, Route, Routes,
 } from 'react-router-dom';
 import './App.css';
-import CompaniesList from './components/list/FinancialList';
-import HeaderWithBackButton from './components/nav/navbar';
-import CompanyDetails from './components/details/FinancialDetails';
+import CompaniesList from './components/list/FinancialList.js';
+import HeaderWithBackButton from './components/nav/navbar.js';
+import CompanyDetails from './components/details/FinancialDetails.js';
 
 function App() {
   return (

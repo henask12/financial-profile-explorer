@@ -1,7 +1,7 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import axios from 'axios';
-import { RESET_VALUE, fetchCategories } from '../catagory/catagoriesSlice'; // Make sure this path is correct
+import { RESET_VALUE, fetchCategories } from '../catagory/catagoriesSlice.js';
 
 // Create a mock store with middleware
 const mockStore = configureMockStore([thunk]);
