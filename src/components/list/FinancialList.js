@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import CompanyCard from '../card/companiesCard';
-import { fetchCategories } from '../../redux/catagory/catagoriesSlice';
-import CompanyDetails from '../details/FinancialDetails';
+import CompanyCard from '../card/companiesCard.js';
+import { fetchCategories } from '../../redux/catagory/catagoriesSlice.js';
+import CompanyDetails from '../details/FinancialDetails.js';
 
 const CompaniesList = () => {
   const { loading, error, companies } = useSelector((state) => state.categories);

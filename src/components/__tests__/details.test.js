@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import CompanyDetails from '../details/FinancialDetails';
+import CompanyDetails from '../details/FinancialDetails.js';
 
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'), // Keep the actual implementation

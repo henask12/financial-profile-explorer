@@ -2,8 +2,8 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { Provider, useDispatch, useSelector } from 'react-redux'; // Make sure to import your Redux store provider
 import { MemoryRouter } from 'react-router-dom';
-import CompaniesList from '../list/FinancialList';
-import store from '../../redux/store';
+import CompaniesList from '../list/FinancialList.js';
+import store from '../../redux/store.js';
 
 // Mock useSelector and useDispatch for testing
 jest.mock('react-redux', () => ({

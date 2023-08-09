@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import CompanyCard from '../card/companiesCard';
+import CompanyCard from '../card/companiesCard.js';
 
 // Mocking react-router-dom's useNavigate
 jest.mock('react-router-dom', () => ({
