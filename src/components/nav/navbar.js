@@ -12,13 +12,13 @@ const HeaderWithBackButton = () => {
   return (
     <nav className="bg-pink-900">
       <div className="container mx-auto flex items-center justify-between py-4">
-        <button type="button" className="text-body-primary" onClick={handleBack}>
+        <button data-testid="back-button" type="button" className="text-body-primary" onClick={handleBack}>
           <FaAngleLeft className="text-body-primary" size={26} color="white" />
         </button>
         <h3 className="mb-0 text-white font-semibold">Finance</h3>
         <div className="flex">
-          <FaMicrophone className="text-white" size={22} />
-          <FaCog className="text-white ml-8" size={22} />
+          <FaMicrophone data-testid="microphone-icon" className="text-white" size={22} />
+          <FaCog data-testid="cog-icon" className="text-white ml-8" size={22} />
         </div>
       </div>
     </nav>
