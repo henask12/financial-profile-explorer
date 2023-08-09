@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { FaAngleLeft, FaCog, FaMicrophone } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import HeaderWithBackButton from '../nav/navbar';
 
@@ -8,7 +7,6 @@ import HeaderWithBackButton from '../nav/navbar';
 jest.mock('react-router-dom', () => ({
   useNavigate: jest.fn(),
 }));
-
 
 describe('HeaderWithBackButton component', () => {
   beforeEach(() => {
