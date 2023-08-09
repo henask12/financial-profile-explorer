@@ -10,7 +10,7 @@ const HeaderWithBackButton = () => {
   };
 
   return (
-    <nav className="bg-dark-pink-600">
+    <nav className="bg-pink-900">
       <div className="container mx-auto flex items-center justify-between py-4">
         <button type="button" className="text-body-primary" onClick={handleBack}>
           <FaAngleLeft className="text-body-primary" size={26} color="white" />
