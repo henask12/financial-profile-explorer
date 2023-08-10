@@ -11,7 +11,7 @@ const CompanyCard = ({ company, index }) => {
   };
   return (
     <button
-      className={`border-0 ${cardBgColor} text-white rounded-lg overflow-hidden shadow-lg`}
+      className={`border-0 ${cardBgColor} text-white rounded-sm overflow-hidden shadow-sm`}
       onClick={handleCardClick}
       type="button"
     >
@@ -39,7 +39,6 @@ CompanyCard.propTypes = {
     price: PropTypes.number.isRequired,
   }).isRequired,
   index: PropTypes.number.isRequired,
-  // onClick: PropTypes.func.isRequired, // Add onClick to PropTypes validation
 };
 
 export default CompanyCard;
