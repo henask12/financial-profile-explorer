@@ -40,7 +40,7 @@ const CompanyDetails = () => {
             .map((value, index) => (
               <div
                 key={value}
-                className={`border-t py-3 flex justify-between items-center ${index % 2 === 0 ? 'bg-rose-500' : 'bg-pink-700'}`}
+                className={`border-t py-3 flex justify-between items-center ${index % 2 === 0 ? 'bg-pink-700' : 'bg-pink-900'}`}
               >
                 <span className="p-3 text-lg font-semibold capitalize">{value}</span>
                 <div className="flex items-center">

@@ -10,7 +10,7 @@ import CompanyDetails from './components/details/FinancialDetails.js';
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-pink-700 min-h-full flex flex-col">
+      <div className="bg-primary min-h-full flex flex-col">
         <HeaderWithBackButton />
         <Routes>
           <Route path="/" element={<CompaniesList />} />

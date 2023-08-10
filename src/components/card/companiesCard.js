@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 
 const CompanyCard = ({ company, index }) => {
-  const cardBgColor = index % 4 === 0 || index % 4 === 3 ? 'bg-pink-500' : 'bg-pink-600';
+  const cardBgColor = index % 4 === 0 || index % 4 === 3 ? 'bg-pink-600' : 'bg-pink-700';
   const navigate = useNavigate();
 
   const handleCardClick = () => {

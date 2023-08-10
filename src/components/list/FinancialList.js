@@ -61,11 +61,11 @@ const CompaniesList = () => {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-center text-2xl mt-4 mb-6">Stats by Company</h2>
-      <header className="p-4 bg-pink-800">
+      <header className="p-4 bg-pink-600">
         <input
           type="text"
           placeholder="Search companies..."
-          className="px-4 py-2 border border-pink-600 rounded w-full text-pink-900"
+          className="px-4 py-2 border border-pink-500 rounded w-full text-pink-900"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />

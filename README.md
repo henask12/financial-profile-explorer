@@ -87,9 +87,18 @@ A **Financial Profile Explorer**  is a comprehensive online platform designed to
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
- <!-- [Live Demo](https://space-traveler-hub-qacv.onrender.com/) -->
+ [Live Demo](https://financial-profile-explorer.onrender.com/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO Presentation -->
+
+## 🚀 Vedio Presentation <a name="live-presenation"></a>
+
+[Finance React - Project Presentation](https://www.loom.com/share/9a980005f2014528bb87b7b12427c317?sid=4e63efee-3408-4b81-925b-8644a2856da3) 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 
@@ -231,6 +240,13 @@ I would like to thank the following individuals and resources for their inspirat
 
 -   My codding Partner's
 -   Microverse Communtiy
+#### Minimalistic Elegance Website
+
+This project follows the design guidelines of Minimalistic Elegance, designed by Nelson Sakwa. The original design concept can be found on [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
+## Credits
+
+Original design concept: Nelson Sakwa
+Behance Project: [Minimalistic Elegance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
