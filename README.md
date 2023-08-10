@@ -240,6 +240,13 @@ I would like to thank the following individuals and resources for their inspirat
 
 -   My codding Partner's
 -   Microverse Communtiy
+#### Minimalistic Elegance Website
+
+This project follows the design guidelines of Minimalistic Elegance, designed by Nelson Sakwa. The original design concept can be found on [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
+## Credits
+
+Original design concept: Nelson Sakwa
+Behance Project: [Minimalistic Elegance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
