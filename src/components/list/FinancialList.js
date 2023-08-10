@@ -74,7 +74,7 @@ const CompaniesList = () => {
         {selectedCompany ? (
           <CompanyDetails company={selectedCompany} />
         ) : (
-          <div className="grid gap-4 grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8" data-testid="company-card">
+          <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8" data-testid="company-card">
             {filteredCompanies.map((company, index) => (
               <CompanyCard
                 company={company}
